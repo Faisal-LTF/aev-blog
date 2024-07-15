@@ -27,29 +27,26 @@ const cactusTech: Array<{ title: string; desc: string; href: string }> = [
 	<section>
 		<h1 class="title mb-6">Hello World!</h1>
 		<p class="mb-4">
-			Hi,I'm Faisal. <br /> This is my personal blog site, where I share things that interest me.
-			<br />
-			 However, if you're interested in collaborating with me to discuss and create interesting
-			applications for business or personal use, click the icon below.
+			Saya Faisal. <br /> Ini adalah situs blog pribadi saya, dimana saya berbagi hal-hal yang
+			menarik bagi saya. Dengan berlatar belakang sebagai programmer, saya sangat membuka diri untuk
+			berkolaborasi dalam pembuatan website. <SocialList />
 		</p>
-		<SocialList />
-	</section>
-	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl">Posts</h2>
-		<ul class="space-y-4 sm:space-y-2">
-			{
-				allPostsByDate.map((p) => (
-					<li class="flex flex-col gap-x-2 sm:flex-row">
-						<PostPreview post={p} />
-					</li>
-				))
-			}
-		</ul>
-	</section>
-	<section class="mt-16">
-		<h2 class="title mb-4 text-xl">Recent Projects</h2>
-		<p class="mb-4">COMING SOON ..</p>
-		<!-- <ul class="space-y-4 sm:space-y-2">
+		<section aria-label="Blog post list" class="mt-16">
+			<h2 class="title mb-4 text-xl">Posts</h2>
+			<ul class="space-y-4 sm:space-y-2">
+				{
+					allPostsByDate.map((p) => (
+						<li class="flex flex-col gap-x-2 sm:flex-row">
+							<PostPreview post={p} />
+						</li>
+					))
+				}
+			</ul>
+		</section>
+		<section class="mt-16">
+			<h2 class="title mb-4 text-xl">Recent Projects</h2>
+			<p class="mb-4">COMING SOON ..</p>
+			<!-- <ul class="space-y-4 sm:space-y-2">
 			{
 				cactusTech.map(({ href, title, desc }) => (
 					<li>
@@ -66,5 +63,6 @@ const cactusTech: Array<{ title: string; desc: string; href: string }> = [
 				))
 			}
 		</ul> -->
+		</section>
 	</section>
 </PageLayout>
